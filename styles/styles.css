@@ -1,0 +1,272 @@
+/* Globales */
+*{
+    margin: 0; 
+    padding: 0;
+}
+
+@font-face {
+    font-family: dekko;
+    src: url(../fonts/Dekko-Regular.ttf);
+}
+
+.galeriaGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+html{
+    font-size: 62.5%; /* 1rem=10px */
+    background-color: #FFBB5C;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+header{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 3rem;
+
+}
+
+section article{
+    
+    padding: 3rem;
+    width: 50rem;
+    height: 10rem;
+    text-align: center;
+    border-top-style: dotted;
+    border-top-color: bisque;
+}
+
+section article p{
+    background-color: #FF9B50;
+    line-height: 2rem;
+    font-style: italic;
+    font-size: 2rem;
+    text-align:center;
+    color:bisque;
+    overflow: hidden;
+} 
+
+/* Listas */
+
+ol{
+    color: #a92415;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.listaobjetos{
+    background-color: #FF9B50;
+    line-height: 2rem;
+    font-style: italic;
+    font-size: 2rem;
+    text-align:center;
+    color:bisque;
+    overflow: hidden;
+}
+
+/* Tipografias */
+
+h1{
+    font-size: 9rem;
+    font-family: dekko, sans-serif;
+    text-align: center;
+    color:#C63D2F;
+}
+
+h2{
+    font-size: 3rem;
+    color:#C63D2F;
+    font-family: dekko, sans-serif;
+}
+
+h3{
+    font-size: 1.5rem;
+    color: #C63D2F;
+}
+
+p{
+    font-size: 1.4rem;
+    color: #C63D2F;
+}
+
+strong{
+    font-weight: 10;
+    font-style: italic;
+}
+
+.parrafoNaranja{
+    font-size: 2rem;
+    color: #FF9B50;
+    width:auto;
+    background-color: #C63D2F;
+}
+
+/* Menu Navegacion  y banner con logo */ 
+
+nav{
+    background-color: #C63D2F;
+    width:fit-content; 
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-style:inset;
+    border-color: #a92415;
+    border-width: 1rem;
+    border-radius: 0.7rem;
+}
+
+.menuNaveg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #FF9B50;
+    font-size: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-style:double;
+    border-radius: 1rem;
+}
+
+.botonMenuNaveg{
+    color:#C63D2F;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;    
+}
+.botonMenuNaveg:hover {
+    color:#eee8e8;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;    
+}
+
+.bannerS{
+    background-image: url(../img/logo.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin: 5rem;
+}
+
+/* "Formateo" y alineacion con BOX-MODEL (sin usar flex) */
+
+.alinear{
+    display:inline-block;
+    margin: 1rem;    
+}
+
+.imgIndex{
+    width: 10%;
+    height: 10%;
+    margin-left: -10rem;
+}
+
+.imgIndex2{
+    width: 10%;
+    height: 10%;
+    margin-left: 5rem;
+}
+
+.imgIndex3{
+    width: 10%;
+    height: 10%;
+    margin-left: 20rem;
+}
+
+.imgGaleria{
+    width: 15vh;
+    height: 15vh;
+}
+
+/* Formulario */
+
+.labelFormu{
+    font-size: 1.5rem;
+    color: #a92415;
+    background-color: #FFBB5C;
+}
+
+#btnNaranja{
+    background-color: #FFBB5C;
+    font-size: 2rem;
+    color: #C63D2F;
+}
+
+/* Pie de pagina, boton ARRIBA y logo IG.*/
+
+.linkArriba{
+    text-align: right;
+    margin-right: 3rem;
+    font-size: 1.5rem;
+    color:#a92415;
+}
+
+footer{
+    
+    text-align: center;
+    background-color: #FF9B50;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.igIcoColor{
+    color: #C63D2F;
+    font-size: 3rem;
+}
+/* MAPA */
+.mapouter{
+    position:relative;text-align:right;width:600px;height:400px;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none;
+    width:600px;
+    height:400px;
+}
+.gmap_iframe {
+    width:600px;
+    height:400px;
+}
+
+@media (min-width:320px) {
+    
+    .galeriaGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+@media (min-width:768px) {
+    
+    .galeriaGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+@media (min-width:1024px) {
+    
+    .galeriaGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}

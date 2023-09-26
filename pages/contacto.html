@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Favio Victor Bettati">
+        <title> APedidoen3D </title>
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <link rel="stylesheet" href="../styles/styles.css">
+    </head>
+
+    <body>
+            <header id="arriba">    <!-- Seccion 1: Banner (En un futuro será carrousel de fotografias) y Menu Navegacion.-->
+            
+                <div class="bannerS">
+                    <h1>APedidoEn3D</h1>
+                </div>
+                    <nav>
+                        <div>
+                            <ul class="menuNaveg">
+                                <li><a class="botonMenuNaveg" href="../index.html">INICIO</a></li>
+                                <li><a class="botonMenuNaveg" href="fabrica.html">FABRICACION</a></li>
+                                <li><a class="botonMenuNaveg" href="galeria.html">GALERIA</a></li>
+                                <li><a class="botonMenuNaveg" href="quienesomos.html">QUIENES SOMOS</a></li>
+                                <li><a class="botonMenuNaveg" href="#">CONTACTO</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+            </header>   <!-- FIN Seccion 1-->
+
+            <main>  <!-- Seccion 2: Formulario de contacto.-->
+                <section>
+                    <h2>Contactanos completando el siguiente formulario:</h2>
+                    <form action="">
+                        <fieldset class="labelFormu">
+                            <legend>Formulario APedido3D</legend>
+                            <div>
+                                <label for="nombre">Nombre:</label>
+                                <input class="labelFormu" type="text" placeholder="Tu Nombre" id="nombre">
+                            </div>
+                            <div>
+                                <label for="mail">Correo:</label>
+                                <input class="labelFormu" type="email" placeholder="Tu Email" id="mail">
+                            </div>
+                            <div>
+                                <label for="asunto">Asunto:</label>
+                                <select class="labelFormu" name="" id="asunto">
+                                    <option value="presu">Presupuesto</option>
+                                    <option value="diseno">Diseño</option>
+                                    <option value="cons">Consulta</option>
+                                    <option value="sug">Sugerencia</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="mensaje">Escribí tu mensaje:</label>
+                                <textarea class="labelFormu" id="mensaje" placeholder="Ej: Solicito presupuesto..." cols="30" rows="7"></textarea>
+                            </div>
+                            <div>
+                                <label for="nesletter">Deseo recibir novedades:</label>
+                                <input type="checkbox" name="" id="newsletter">
+                            </div>
+                            <input type="submit" value="Enviar" id="btnNaranja">
+                        </fieldset>
+                    </form>
+                </section>
+
+                <div class="linkArriba"> 
+                    <a class="linkArriba" href="#arriba">Ir ARRIBA</a>  <!-- Boton IR ARRIBA-->
+                </div>
+
+            </main> <!-- FIN Seccion 2-->
+
+            <footer>      <!-- Seccion 3: Pie de pagina con copyright y logo-enlace a instagram en ventana nueva.-->
+                <div>
+                    <h3>2023 ® Todos los derechos reservados.</h3>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/apedidoen3d" target="_blank"> <ion-icon name="logo-instagram" class="igIcoColor"></ion-icon></a>
+                </div>
+            
+            </footer>   <!-- FIN Seccion 3-->
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>    <!-- SCRIPT para Icono de Instagram-->
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+    
+</html>
