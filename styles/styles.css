@@ -17,8 +17,12 @@
 
 html{
     font-size: 62.5%; /* 1rem=10px */
-    background-color: #5dff7e;
+    background-color: #ffc15d;
     font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+body{
+    background-color: #ffc15d;
 }
 
 header{
