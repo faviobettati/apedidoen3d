@@ -44,17 +44,10 @@ section{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 1rem 1rem 1rem 1rem;
-    margin: 3rem;
-
 }
 
 
 section article div{
-    
-    padding: 3rem;
-    width: 50rem;
-    height: 10rem;
     text-align: center;
     border-top-style: dotted;
     border-top-color: bisque;
