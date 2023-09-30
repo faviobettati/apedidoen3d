@@ -129,7 +129,7 @@ strong{
     background-color: #C63D2F;
 }
 
-/* Menu Navegacion  y banner con logo */ 
+/* Menu Navegacion, Pagimnation  y banner con logo */ 
 
 nav{
     background-color: #C63D2F;
@@ -143,6 +143,28 @@ nav{
     border-radius: 0.7rem;
 }
 
+.navGaleria{
+    background-color:#FF9B50;
+    color: #684109;
+    font-size: 2rem;
+    border-color: #a92415;
+    display: flex;
+    justify-content: center;
+}
+
+.navGaleria:link{
+    background-color:#FF9B50;
+    color: #684109;
+    font-size: 2rem;
+    border-color: #a92415;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+}
 .menuNaveg{
     display: flex;
     flex-direction: row;
