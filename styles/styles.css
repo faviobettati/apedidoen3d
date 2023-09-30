@@ -30,6 +30,12 @@ header{
     margin-bottom: 2rem;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 a{
     text-decoration: none;
 }
@@ -43,7 +49,8 @@ section{
 
 }
 
-section article{
+
+section article div{
     
     padding: 3rem;
     width: 50rem;
@@ -53,7 +60,7 @@ section article{
     border-top-color: bisque;
 }
 
-section article p{
+section article div p{
     background-color: #FF9B50;
     line-height: 2rem;
     font-style: italic;
@@ -164,10 +171,20 @@ nav{
 }
 
 .bannerS{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     background-image: url(../img/logo.png);
     background-size:contain;
     background-repeat: no-repeat;
+    background-position: 10%;
     margin: 5rem;
+}
+
+#carouselBanner{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 /* "Formateo" y alineacion con BOX-MODEL (sin usar flex) */
@@ -180,23 +197,9 @@ nav{
 .imgIndex{
     width: 10%;
     height: 10%;
-    margin-left: -10rem;
-}
-
-.imgIndex2{
-    width: 10%;
-    height: 10%;
-    margin-left: 5rem;
-}
-
-.imgIndex3{
-    width: 10%;
-    height: 10%;
-    margin-left: 20rem;
 }
 
 .imgGaleria{
-    width: 15vh;
     height: 15vh;
 }
 
