@@ -286,13 +286,7 @@ footer{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
-    .bannerS{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    
+   
     .logoBanner{
         display:flex;
         height: 10rem;
