@@ -88,10 +88,12 @@ ul{
 /* Tipografias */
 
 h1{
-    font-size: 9rem;
+    font-size: 5rem;
     font-family: dekko, sans-serif;
     text-align: center;
     color:#C63D2F;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 h2{
@@ -190,11 +192,11 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-image: url(../img/logo.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: 10%;
-    margin: 5rem;
+    align-items: center;
+}
+
+.logoBanner{
+    display: none;
 }
 
 #carouselBanner{
@@ -284,7 +286,19 @@ footer{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
+    .bannerS{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logoBanner{
+        display:flex;
+        height: 10rem;
+    }
 }
+
 @media (min-width:1024px) {
     
     .galeriaGrid{
