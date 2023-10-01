@@ -46,6 +46,12 @@ section{
     text-align: center;
 }
 
+section article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 section article div{
     text-align: center;
@@ -66,9 +72,13 @@ section article div p{
 /* Listas */
 
 ol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #a92415;
     font-size: 1.5rem;
-    text-align: left;
+    text-align: center;
 }
 
 ul{
@@ -134,13 +144,13 @@ nav{
     padding-bottom: 1rem;
     border-style:inset;
     border-color: #a92415;
-    border-width: 1rem;
+    border-width: 0.3rem;
     border-radius: 0.7rem;
 }
 
 .navGaleria{
     background-color:#FF9B50;
-    color: #684109;
+    color: #ffffff;
     font-size: 2rem;
     border-color: #a92415;
     display: flex;
@@ -163,11 +173,16 @@ nav{
 .menuNaveg{
     background-color: #FF9B50;
     font-size: 2rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
     border-style:double;
     border-radius: 1rem;
 }
+
+.nav-item{
+    padding: 1rem;
+}
+
 .navbarFondo{
     background-color: #FF9B50;
 }
@@ -193,6 +208,7 @@ nav{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 3rem;
 }
 
 .logoBanner{
@@ -205,7 +221,7 @@ nav{
     justify-content: center;
 }
 
-/* "Formateo" y alineacion con BOX-MODEL (sin usar flex) */
+/* Alineaciones e IFRAMEs*/
 
 .alinear{
     display:inline-block;
@@ -213,12 +229,19 @@ nav{
 }
 
 .imgIndex{
-    width: 10%;
-    height: 10%;
+    height: 20vh;
 }
 
 .imgGaleria{
-    height: 15vh;
+    height: 25vh;
+}
+
+.videoymapa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 /* Formulario */
@@ -290,6 +313,25 @@ footer{
     .logoBanner{
         display:flex;
         height: 10rem;
+    }
+    section article{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items:center;
+        margin: 1rem;
+        
+    }
+    .imgIndex{
+        height: 25vh;
+    }
+    
+    .imgGaleria{
+        height: 30vh;
+    }
+    .videoFabrica{
+        width: 560px;
+        height: 315px;
     }
 }
 
