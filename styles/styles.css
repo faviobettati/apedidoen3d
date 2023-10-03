@@ -210,11 +210,9 @@ nav{
     display: none;
 }
 
-#carouselBanner{
-    display:flex;
-    flex-direction: row;
+.carouselCentrado{
+    display: flex;
     justify-content: center;
-    margin-bottom: 3rem;
 }
 
 /* Alineaciones e IFRAMEs*/
@@ -238,6 +236,23 @@ nav{
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+
+.mapouter{
+    position:relative;
+    text-align:right;
+    width:600px;
+    height:400px;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none;
+    width:600px;
+    height:400px;
+}
+.gmap_iframe {
+    width:600px;
+    height:400px;
 }
 
 /* Formulario */
@@ -274,23 +289,6 @@ footer{
 .igIcoColor{
     color: #C63D2F;
     font-size: 3rem;
-}
-/* MAPA */
-.mapouter{
-    position:relative;
-    text-align:right;
-    width:600px;
-    height:400px;
-}
-.gmap_canvas {
-    overflow:hidden;
-    background:none;
-    width:600px;
-    height:400px;
-}
-.gmap_iframe {
-    width:600px;
-    height:400px;
 }
 
 @media (min-width:320px) {
