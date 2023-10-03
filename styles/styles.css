@@ -50,8 +50,16 @@ section{
 section article{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    align-items:center;
+    margin: 1rem;
+    border: calc(8px + 0.2vw) solid transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-size: cover;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 0.7rem;
     }
 
 section article div{
@@ -112,6 +120,7 @@ h2{
     font-size: 3rem;
     color:#C63D2F;
     font-family: dekko, sans-serif;
+    text-shadow: 1px 1px 1px brown;
 }
 
 h3{
@@ -130,10 +139,10 @@ strong{
 }
 
 .parrafoNaranja{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
-    color: #FF9B50;
     width:auto;
-    background-color: #C63D2F;
+    background-color: rgba(255, 255, 255, 0.237);
 }
 
 /* Menu Navegacion, Pagimnation  y banner con logo */ 
@@ -187,22 +196,6 @@ nav{
 
 .navbarFondo{
     background-color: #FF9B50;
-}
-
-
-.botonMenuNaveg{
-    color:#C63D2F;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;    
-}
-.botonMenuNaveg:hover {
-    color:#eee8e8;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;    
 }
 
 .bannerS{
@@ -332,6 +325,7 @@ footer{
         background-size: cover;
         box-sizing: border-box;
         box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+        border-radius: 0.7rem;
     }
     .imgIndex{
         height: 25vh;
