@@ -52,8 +52,7 @@ section article{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-style: double;
-}
+    }
 
 section article div{
     text-align: center;
