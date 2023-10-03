@@ -44,6 +44,7 @@ section{
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
 }
 
 section article{
@@ -51,22 +52,24 @@ section article{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-style: double;
 }
 
 section article div{
     text-align: center;
-    border-top-style: dotted;
-    border-top-color: bisque;
+    border-style: dotted;
+    border-color: bisque;
+    border-radius: 10%;
 }
 
 section article div p{
     background-color: #FF9B50;
-    line-height: 2rem;
     font-style: italic;
     font-size: 2rem;
     text-align:center;
     color:bisque;
     overflow: hidden;
+    padding: 1rem;
 } 
 
 /* Listas */
@@ -83,6 +86,7 @@ ol{
 
 ul{
     list-style-type: none;
+    padding: 1rem;
 }
 
 .listaobjetos{
@@ -282,7 +286,10 @@ footer{
 }
 /* MAPA */
 .mapouter{
-    position:relative;text-align:right;width:600px;height:400px;
+    position:relative;
+    text-align:right;
+    width:600px;
+    height:400px;
 }
 .gmap_canvas {
     overflow:hidden;
@@ -321,7 +328,12 @@ footer{
         justify-content:center;
         align-items:center;
         margin: 1rem;
-        
+        border: calc(8px + 0.2vw) solid transparent;
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        background-size: cover;
+        box-sizing: border-box;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
     }
     .imgIndex{
         height: 25vh;
