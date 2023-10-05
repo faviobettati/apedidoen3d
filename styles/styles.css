@@ -9,12 +9,6 @@
     src: url(../fonts/Dekko-Regular.ttf);
 }
 
-.galeriaGrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
 html{
     font-size: 62.5%; /* 1rem=10px */
     background-color: #ffc15d;
@@ -64,19 +58,20 @@ section article{
 
 section article div{
     text-align: center;
-    border-radius: 10%;
+    border-radius: 1rem;
     background-color: #ff80001f;
 }
 
-section article div p{
+.pCardInicio{
+    padding: 1rem;
     background-color: #FF9B50;
+    border-radius: 3rem;
+    line-height: 2rem;
     font-style: italic;
     font-size: 2rem;
     text-align:center;
     color:bisque;
-    overflow: hidden;
-    padding: 1rem;
-} 
+   }
 
 /* Listas */
 
@@ -93,16 +88,6 @@ ol{
 ul{
     list-style-type: none;
     padding: 1rem;
-}
-
-.listaobjetos{
-    background-color: #FF9B50;
-    line-height: 2rem;
-    font-style: italic;
-    font-size: 2rem;
-    text-align:center;
-    color:bisque;
-    overflow: hidden;
 }
 
 /* Tipografias */
@@ -145,7 +130,7 @@ strong{
     background-color: rgba(255, 255, 255, 0.237);
 }
 
-/* Menu Navegacion, Pagimnation  y banner con logo */ 
+/* Menu de Navegacion, Pagination y Carousel*/ 
 
 nav{
     background-color: #C63D2F;
@@ -159,28 +144,22 @@ nav{
     border-radius: 0.7rem;
 }
 
-.navGaleria{
-    background-color:#FF9B50;
-    color: #ffffff;
-    font-size: 2rem;
-    border-color: #a92415;
-    display: flex;
-    justify-content: center;
+.nav-link{
+    font-family: dekko, sans-serif;
+    font-size: 2.5rem;
+    color:#a92415;
+    text-shadow: 1px 1px 2px black;
 }
 
-.navGaleria:link{
-    background-color:#FF9B50;
-    color: #684109;
-    font-size: 2rem;
-    border-color: #a92415;
-    display: flex;
-    justify-content: center;
+.nav-link:hover{
+    color:#c15c0e;
+    text-shadow: 1px 1px 2px black;
 }
 
-.pagination{
-    display: flex;
-    justify-content: center;
+.navbarFondo{
+    background-color: #FF9B50;
 }
+
 .menuNaveg{
     background-color: #FF9B50;
     font-size: 2rem;
@@ -192,10 +171,6 @@ nav{
 
 .nav-item{
     padding: 1rem;
-}
-
-.navbarFondo{
-    background-color: #FF9B50;
 }
 
 .bannerS{
@@ -215,6 +190,19 @@ nav{
     justify-content: center;
 }
 
+.navGaleria:link{
+    background-color:#FF9B50;
+    color: #684109;
+    font-size: 2rem;
+    border-color: #a92415;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+}
 /* Alineaciones e IFRAMEs*/
 
 .alinear{
@@ -257,10 +245,25 @@ nav{
 
 /* Formulario */
 
+.fondoForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#FFBB5C ;
+    border-radius: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.7rem;
+    color: #C63D2F;
+}
+
 .labelFormu{
+    display: flex;
+    flex-direction: column;
     font-size: 1.5rem;
     color: #a92415;
     background-color: #FFBB5C;
+    border-radius: 1rem;
 }
 
 #btnNaranja{
@@ -303,7 +306,7 @@ footer{
     
     .galeriaGrid{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
    
@@ -312,18 +315,7 @@ footer{
         height: 10rem;
     }
     section article{
-        display: flex;
         flex-direction: row;
-        justify-content:center;
-        align-items:center;
-        margin: 1rem;
-        border: calc(8px + 0.2vw) solid transparent;
-        background-origin: border-box;
-        background-clip: content-box, border-box;
-        background-size: cover;
-        box-sizing: border-box;
-        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
-        border-radius: 0.7rem;
     }
     .imgIndex{
         height: 25vh;
@@ -338,11 +330,3 @@ footer{
     }
 }
 
-@media (min-width:1024px) {
-    
-    .galeriaGrid{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-}
