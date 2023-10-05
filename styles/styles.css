@@ -302,7 +302,7 @@ footer{
     
     .galeriaGrid{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
 }
@@ -310,7 +310,7 @@ footer{
     
     .galeriaGrid{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
    
@@ -336,4 +336,10 @@ footer{
         height: 20vh;
     }
 }
-
+@media (min-width:1024px) {
+    .galeriaGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
