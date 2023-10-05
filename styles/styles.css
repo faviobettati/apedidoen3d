@@ -195,6 +195,15 @@ nav{
     margin-bottom: 1vh;
 }
 
+.navGaleria{
+    background-color:#FF9B50;
+    color: #684109;
+    font-size: 2rem;
+    border-color: #a92415;
+    display: flex;
+    justify-content: center;
+}
+
 .navGaleria:link{
     background-color:#FF9B50;
     color: #684109;
@@ -207,6 +216,7 @@ nav{
 .pagination{
     display: flex;
     justify-content: center;
+
 }
 /* Alineaciones e IFRAMEs*/
 
