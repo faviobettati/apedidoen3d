@@ -133,16 +133,16 @@ strong{
 /* Menu de Navegacion, Pagination y Carousel*/ 
 
 nav{
-    background-color: #C63D2F;
+    background-color: #FF9B50;
     width:fit-content; 
     margin: auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     border-style:inset;
     border-color: #a92415;
     border-width: 0.3rem;
     border-radius: 0.7rem;
-}
+ }
 
 .nav-link{
     font-family: dekko, sans-serif;
@@ -191,7 +191,8 @@ nav{
 }
 .imgCarousel{
     height: 15vh;
-    margin-bottom: 5vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
 .navGaleria:link{
@@ -305,6 +306,7 @@ footer{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
+    
 }
 @media (min-width:768px) {
     
