@@ -1,4 +1,4 @@
-/* Globales */
+/*Globales*/
 * {
   margin: 0;
   padding: 0;
@@ -67,7 +67,7 @@ section article div {
   font-style: italic;
   font-size: 2rem;
   text-align: center;
-  color: bisque;
+  color: rgb(236, 212, 182);
 }
 
 /* Listas */
@@ -121,7 +121,7 @@ strong {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2rem;
   width: auto;
-  background-color: rgba(255, 255, 255, 0.237);
+  background-color: rgba(255, 128, 0, 0.1215686275);
 }
 
 /* Menu de Navegacion, Pagination, Animacion y Carousel*/
@@ -144,7 +144,7 @@ nav {
   text-shadow: 1px 1px 2px black;
 }
 .nav-link:hover {
-  color: #c15c0e;
+  color: #FF9B50;
   text-shadow: 1px 1px 2px black;
   transform: translate(3px, -5px);
 }
@@ -191,7 +191,7 @@ nav {
 
 .navGaleria {
   background-color: #FF9B50;
-  color: #684109;
+  color: rgb(236, 212, 182);
   font-size: 2rem;
   border-color: #a92415;
   display: flex;
@@ -199,7 +199,7 @@ nav {
 }
 .navGaleria:link {
   background-color: #FF9B50;
-  color: #684109;
+  color: rgb(236, 212, 182);
   font-size: 2rem;
   border-color: #a92415;
   display: flex;
@@ -314,7 +314,6 @@ nav {
 footer {
   text-align: center;
   background-color: #FF9B50;
-  color: white;
   font-size: 1.5rem;
 }
 

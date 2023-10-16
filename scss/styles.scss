@@ -1,10 +1,16 @@
-// Variables
+//Variables//
+
+$colorClaro: rgb(236, 212, 182);
 $colorSuave:#FFBB5C;
 $colorMediano:#FF9B50;
 $colorVivo:#a92415;
 $colorTextos:#C63D2F;
+$colorTranslucid:#ff80001f;
+$fuentePrim:dekko, sans-serif;
+$fuenteSecu:Verdana, Geneva, Tahoma, sans-serif;
 
-/* Globales */
+/*Globales*/
+
 *{
     margin: 0; 
     padding: 0;
@@ -18,7 +24,7 @@ $colorTextos:#C63D2F;
 html{
     font-size: 62.5%; /* 1rem=10px */
     background-color: $colorSuave;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:$fuenteSecu;
 }
 
 body{
@@ -61,7 +67,7 @@ section{
         div{
             text-align: center;
             border-radius: 1rem;
-            background-color: #ff80001f;
+            background-color: $colorTranslucid;
         }
     }
 }
@@ -73,7 +79,7 @@ section{
     font-style: italic;
     font-size: 2rem;
     text-align:center;
-    color:bisque;
+    color: $colorClaro;
    }
 
 /* Listas */
@@ -96,7 +102,7 @@ ul{
 
 h1{
     font-size: 5rem;
-    font-family: dekko, sans-serif;
+    font-family: $fuentePrim;
     text-align: center;
     color: $colorTextos;
     margin-left: 3rem;
@@ -106,7 +112,7 @@ h1{
 h2{
     font-size: 3rem;
     color: $colorTextos;
-    font-family: dekko, sans-serif;
+    font-family: $fuentePrim;
     text-shadow: 1px 1px 1px $colorVivo;
 }
 
@@ -126,10 +132,10 @@ strong{
 }
 
 .parrafoNaranja{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:$fuenteSecu;
     font-size: 2rem;
     width:auto;
-    background-color: rgba(255, 255, 255, 0.237);
+    background-color: $colorTranslucid;
 }
 
 /* Menu de Navegacion, Pagination, Animacion y Carousel*/ 
@@ -146,12 +152,12 @@ nav{
     border-radius: 0.7rem;
  }
 .nav-link{
-    font-family: dekko, sans-serif;
+    font-family: $fuentePrim;
     font-size: 2.5rem;
     color: $colorVivo;
     text-shadow: 1px 1px 2px black;
     &:hover{
-        color:#c15c0e;
+        color: $colorMediano;
         text-shadow: 1px 1px 2px black;
         transform: translate(3px, -5px);
     }
@@ -198,14 +204,14 @@ nav{
 
 .navGaleria{
     background-color:$colorMediano;
-    color: #684109;
+    color: $colorClaro;
     font-size: 2rem;
     border-color: $colorVivo;
     display: flex;
     justify-content: center;
     &:link{
         background-color:$colorMediano;
-        color: #684109;
+        color: $colorClaro;
         font-size: 2rem;
         border-color: $colorVivo;
         display: flex;
@@ -291,7 +297,7 @@ nav{
     align-items: center;
     background-color:$colorSuave;
     border-radius: 3rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $fuenteSecu;
     font-size: 1.7rem;
     color: $colorTextos;
 }
@@ -324,7 +330,6 @@ footer{
     
     text-align: center;
     background-color:$colorMediano;
-    color: white;
     font-size: 1.5rem;
 }
 
