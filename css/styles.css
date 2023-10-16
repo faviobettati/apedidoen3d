@@ -1,3 +1,10 @@
+.videoymapa, .fondoForm, ol, .alinearFabrica, section article, section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
 /*Globales*/
 * {
   margin: 0;
@@ -26,24 +33,13 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 a {
   text-decoration: none;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-}
 section article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 1rem;
   border: calc(8px + 0.2vw) solid transparent;
   background-origin: border-box;
@@ -75,12 +71,6 @@ section article div {
   margin: 1rem;
 }
 
-.alinearFabrica {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .imgIndex {
   height: 20vh;
 }
@@ -91,10 +81,6 @@ section article div {
 
 /* Listas */
 ol {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   color: #a92415;
   font-size: 1.5rem;
   text-align: center;
@@ -106,29 +92,31 @@ ul {
 
 /* Tipografias */
 h1 {
+  color: #C63D2F;
   font-size: 5rem;
   font-family: dekko, sans-serif;
   text-align: center;
-  color: #C63D2F;
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
 h2 {
-  font-size: 3rem;
   color: #C63D2F;
+  font-size: 3rem;
   font-family: dekko, sans-serif;
   text-shadow: 1px 1px 1px #a92415;
 }
 
 h3 {
-  font-size: 1.5rem;
   color: #C63D2F;
+  font-size: 1.9rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p {
-  font-size: 1.4rem;
   color: #C63D2F;
+  font-size: 1.4rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 strong {
@@ -137,46 +125,47 @@ strong {
 }
 
 .parrafoNaranja {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #C63D2F;
   font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: auto;
   background-color: rgba(255, 128, 0, 0.1215686275);
 }
 
 /* Formulario */
 .fondoForm {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #FFBB5C;
-  border-radius: 3rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.7rem;
   color: #C63D2F;
+  font-size: 1.7rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #FF9B50;
+  border-radius: 3rem;
+  padding: 15px;
 }
 
 .labelFormu {
+  color: #a92415;
+  font-size: 1.9rem;
+  font-family: dekko, sans-serif;
   display: flex;
   flex-direction: column;
-  font-size: 1.5rem;
-  color: #a92415;
   background-color: #FFBB5C;
   border-radius: 1rem;
 }
 
 #btnNaranja {
-  background-color: #FFBB5C;
+  color: #a92415;
   font-size: 2rem;
-  color: #C63D2F;
+  font-family: dekko, sans-serif;
+  background-color: #FFBB5C;
 }
 
 /* Pie de pagina, boton ARRIBA y logo IG.*/
 .linkArriba {
+  color: #a92415;
+  font-size: 2rem;
+  font-family: dekko, sans-serif;
   text-align: right;
   margin-right: 3rem;
-  font-size: 1.5rem;
-  color: #a92415;
 }
 
 footer {
@@ -204,9 +193,9 @@ nav {
 }
 
 .nav-link {
-  font-family: dekko, sans-serif;
-  font-size: 2.5rem;
   color: #a92415;
+  font-size: 2.5rem;
+  font-family: dekko, sans-serif;
   text-shadow: 1px 1px 2px black;
 }
 .nav-link:hover {
@@ -256,17 +245,19 @@ nav {
 }
 
 .navGaleria {
-  background-color: #FF9B50;
   color: rgb(236, 212, 182);
   font-size: 2rem;
+  font-family: dekko, sans-serif;
+  background-color: #FF9B50;
   border-color: #a92415;
   display: flex;
   justify-content: center;
 }
 .navGaleria:link {
-  background-color: #FF9B50;
   color: rgb(236, 212, 182);
   font-size: 2rem;
+  font-family: dekko, sans-serif;
+  background-color: #FF9B50;
   border-color: #a92415;
   display: flex;
   justify-content: center;
@@ -295,10 +286,6 @@ nav {
   }
 }
 .videoymapa {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   align-content: center;
 }
 

@@ -12,9 +12,7 @@ nav{
     border-radius: 0.7rem;
  }
 .nav-link{
-    font-family: $fuentePrim;
-    font-size: 2.5rem;
-    color: nth($color, 4);
+    @include textoCTF(nth($color, 4), 2.5rem, $fuentePrim );
     text-shadow: 1px 1px 2px black;
     &:hover{
         color: nth($color, 3);
@@ -63,16 +61,14 @@ nav{
 }
 
 .navGaleria{
+    @include textoCTF(nth($color, 1), 2rem, $fuentePrim );
     background-color:nth($color, 3);
-    color: nth($color, 1);
-    font-size: 2rem;
     border-color: nth($color, 4);
     display: flex;
     justify-content: center;
     &:link{
+        @include textoCTF(nth($color, 1), 2rem, $fuentePrim );
         background-color:nth($color, 3);
-        color: nth($color, 1);
-        font-size: 2rem;
         border-color: nth($color, 4);
         display: flex;
         justify-content: center;
@@ -104,10 +100,7 @@ nav{
 }
 
 .videoymapa{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %flexcolumncenter;
     align-content: center;
 }
 

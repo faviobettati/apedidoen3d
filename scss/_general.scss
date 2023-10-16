@@ -4,9 +4,7 @@
 }
 
 .alinearFabrica{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @extend %flexcolumncenter;
 }
 
 .imgIndex{
@@ -20,10 +18,7 @@
 /* Listas */
 
 ol{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %flexcolumncenter;
     color: nth($color, 4);
     font-size: 1.5rem;
     text-align: center;
@@ -36,29 +31,23 @@ ul{
 /* Tipografias */
 
 h1{
-    font-size: 5rem;
-    font-family: $fuentePrim;
+    @include textoCTF(nth($color, 5), 5rem, $fuentePrim );
     text-align: center;
-    color: nth($color, 5);
     margin-left: 3rem;
     margin-right: 3rem;
 }
 
 h2{
-    font-size: 3rem;
-    color: nth($color, 5);
-    font-family: $fuentePrim;
+    @include textoCTF(nth($color, 5), 3rem, $fuentePrim );
     text-shadow: 1px 1px 1px nth($color, 4);
 }
 
 h3{
-    font-size: 1.5rem;
-    color: nth($color, 5);
+    @include textoCTF(nth($color, 5), 1.9rem, $fuenteSecu );
 }
 
 p{
-    font-size: 1.4rem;
-    color: nth($color, 5);
+    @include textoCTF(nth($color, 5), 1.4rem, $fuenteSecu );
 }
 
 strong{
@@ -67,47 +56,39 @@ strong{
 }
 
 .parrafoNaranja{
-    font-family:$fuenteSecu;
-    font-size: 2rem;
+    @include textoCTF(nth($color, 5), 2rem, $fuenteSecu );
     width:auto;
     background-color: $colorTranslucid;
 }
 /* Formulario */
 
 .fondoForm{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: nth($color, 2);
+    @extend %flexcolumncenter;
+    @include textoCTF(nth($color, 5), 1.7rem, $fuenteSecu );
+    background-color: nth($color, 3);
     border-radius: 3rem;
-    font-family: $fuenteSecu;
-    font-size: 1.7rem;
-    color: nth($color, 5);
+    padding: 15px;
 }
 
 .labelFormu{
+    @include textoCTF(nth($color, 4), 1.9rem, $fuentePrim );
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
-    color: nth($color, 4);
     background-color: nth($color, 2);
     border-radius: 1rem;
 }
 
 #btnNaranja{
+    @include textoCTF(nth($color, 4), 2rem, $fuentePrim );
     background-color: nth($color, 2);
-    font-size: 2rem;
-    color: nth($color, 5);
 }
 
 /* Pie de pagina, boton ARRIBA y logo IG.*/
 
 .linkArriba{
+    @include textoCTF(nth($color, 4), 2rem, $fuentePrim );
     text-align: right;
     margin-right: 3rem;
-    font-size: 1.5rem;
-    color:nth($color, 4);
 }
 
 footer{

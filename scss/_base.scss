@@ -12,6 +12,23 @@ rgb(236, 212, 182)
 #a92415
 #C63D2F;
 
+// Extend //
+%flexcolumncenter{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+
+// Mixin //
+
+@mixin textoCTF ($colores, $tamano, $fuente){
+    color: $colores;
+    font-size: $tamano;
+    font-family: $fuente;
+}
+
 /*Globales*/
 
 *{
@@ -42,22 +59,15 @@ header{
 main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 a{
     text-decoration: none;
 }
 section{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    @extend %flexcolumncenter;
     article{
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items:center;
+        @extend %flexcolumncenter;
         margin: 1rem;
         border: calc(8px + 0.2vw) solid transparent;
         background-origin: border-box;
