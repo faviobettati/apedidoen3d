@@ -1,10 +1,10 @@
-// Variables //
+// Variables
 
 $colorTranslucid:#ff80001f;
 $fuentePrim:dekko, sans-serif;
 $fuenteSecu:Verdana, Geneva, Tahoma, sans-serif;
 
-// Lista //
+// Lista
 $color:
 rgb(236, 212, 182)
 #FFBB5C
@@ -12,7 +12,7 @@ rgb(236, 212, 182)
 #a92415
 #C63D2F;
 
-// Extend //
+// Extend
 %flexcolumncenter{
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ rgb(236, 212, 182)
 
 }
 
-// Mixin //
+// Mixin
 
 @mixin textoCTF ($colores, $tamano, $fuente){
     color: $colores;
@@ -64,6 +64,7 @@ main{
 a{
     text-decoration: none;
 }
+
 section{
     @extend %flexcolumncenter;
     article{
@@ -83,6 +84,7 @@ section{
         }
     }
 }
+
 .pCardInicio{
     padding: 1rem;
     background-color: nth($color, 3);

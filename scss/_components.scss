@@ -11,6 +11,7 @@ nav{
     border-width: 0.3rem;
     border-radius: 0.7rem;
  }
+
 .nav-link{
     @include textoCTF(nth($color, 4), 2.5rem, $fuentePrim );
     text-shadow: 1px 1px 2px black;
@@ -110,12 +111,14 @@ nav{
     width:600px;
     height:400px;
 }
+
 .gmap_canvas {
     overflow:hidden;
     background:none;
     width:600px;
     height:400px;
 }
+
 .gmap_iframe {
     width:600px;
     height:400px;
