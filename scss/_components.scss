@@ -1,34 +1,34 @@
 /* Menu de Navegacion, Pagination, Animacion y Carousel*/ 
 
 nav{
-    background-color:$colorMediano;
+    background-color:nth($color, 3);
     width:fit-content; 
     margin: auto;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     border-style:inset;
-    border-color: $colorVivo;
+    border-color: nth($color, 4);
     border-width: 0.3rem;
     border-radius: 0.7rem;
  }
 .nav-link{
     font-family: $fuentePrim;
     font-size: 2.5rem;
-    color: $colorVivo;
+    color: nth($color, 4);
     text-shadow: 1px 1px 2px black;
     &:hover{
-        color: $colorMediano;
+        color: nth($color, 3);
         text-shadow: 1px 1px 2px black;
         transform: translate(3px, -5px);
     }
 }
 
 .navbarFondo{
-    background-color:$colorMediano;
+    background-color:nth($color, 3);
 }
 
 .menuNaveg{
-    background-color:$colorMediano;
+    background-color:nth($color, 3);
     font-size: 2rem;
     padding-right: 2rem;
     padding-left: 2rem;
@@ -63,17 +63,17 @@ nav{
 }
 
 .navGaleria{
-    background-color:$colorMediano;
-    color: $colorClaro;
+    background-color:nth($color, 3);
+    color: nth($color, 1);
     font-size: 2rem;
-    border-color: $colorVivo;
+    border-color: nth($color, 4);
     display: flex;
     justify-content: center;
     &:link{
-        background-color:$colorMediano;
-        color: $colorClaro;
+        background-color:nth($color, 3);
+        color: nth($color, 1);
         font-size: 2rem;
-        border-color: $colorVivo;
+        border-color: nth($color, 4);
         display: flex;
         justify-content: center;
     }

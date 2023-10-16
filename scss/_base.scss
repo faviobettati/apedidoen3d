@@ -1,13 +1,16 @@
 // Variables //
 
-$colorClaro: rgb(236, 212, 182);
-$colorSuave:#FFBB5C;
-$colorMediano:#FF9B50;
-$colorVivo:#a92415;
-$colorTextos:#C63D2F;
 $colorTranslucid:#ff80001f;
 $fuentePrim:dekko, sans-serif;
 $fuenteSecu:Verdana, Geneva, Tahoma, sans-serif;
+
+// Lista //
+$color:
+rgb(236, 212, 182)
+#FFBB5C
+#FF9B50
+#a92415
+#C63D2F;
 
 /*Globales*/
 
@@ -23,12 +26,12 @@ $fuenteSecu:Verdana, Geneva, Tahoma, sans-serif;
 
 html{
     font-size: 62.5%; /* 1rem=10px */
-    background-color: $colorSuave;
+    background-color: nth($color, 2);
     font-family:$fuenteSecu;
 }
 
 body{
-    background-color: $colorSuave;
+    background-color: nth($color, 2);;
 }
 
 header{
@@ -72,11 +75,11 @@ section{
 }
 .pCardInicio{
     padding: 1rem;
-    background-color: $colorMediano;
+    background-color: nth($color, 3);
     border-radius: 3rem;
     line-height: 2rem;
     font-style: italic;
     font-size: 2rem;
     text-align:center;
-    color: $colorClaro;
+    color: nth($color, 1);
    }

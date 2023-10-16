@@ -24,7 +24,7 @@ ol{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: $colorVivo;
+    color: nth($color, 4);
     font-size: 1.5rem;
     text-align: center;
 }
@@ -39,26 +39,26 @@ h1{
     font-size: 5rem;
     font-family: $fuentePrim;
     text-align: center;
-    color: $colorTextos;
+    color: nth($color, 5);
     margin-left: 3rem;
     margin-right: 3rem;
 }
 
 h2{
     font-size: 3rem;
-    color: $colorTextos;
+    color: nth($color, 5);
     font-family: $fuentePrim;
-    text-shadow: 1px 1px 1px $colorVivo;
+    text-shadow: 1px 1px 1px nth($color, 4);
 }
 
 h3{
     font-size: 1.5rem;
-    color: $colorTextos;
+    color: nth($color, 5);
 }
 
 p{
     font-size: 1.4rem;
-    color: $colorTextos;
+    color: nth($color, 5);
 }
 
 strong{
@@ -79,26 +79,26 @@ strong{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $colorSuave;
+    background-color: nth($color, 2);
     border-radius: 3rem;
     font-family: $fuenteSecu;
     font-size: 1.7rem;
-    color: $colorTextos;
+    color: nth($color, 5);
 }
 
 .labelFormu{
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
-    color: $colorVivo;
-    background-color: $colorSuave;
+    color: nth($color, 4);
+    background-color: nth($color, 2);
     border-radius: 1rem;
 }
 
 #btnNaranja{
-    background-color: $colorSuave;
+    background-color: nth($color, 2);
     font-size: 2rem;
-    color: $colorTextos;
+    color: nth($color, 5);
 }
 
 /* Pie de pagina, boton ARRIBA y logo IG.*/
@@ -107,17 +107,17 @@ strong{
     text-align: right;
     margin-right: 3rem;
     font-size: 1.5rem;
-    color:$colorVivo;
+    color:nth($color, 4);
 }
 
 footer{
     
     text-align: center;
-    background-color: $colorMediano;
+    background-color: nth($color, 3);
     font-size: 1.5rem;
 }
 
 .igIcoColor{
-    color: $colorTextos;
+    color: nth($color, 5);
     font-size: 3rem;
 }
