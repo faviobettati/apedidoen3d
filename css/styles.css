@@ -1,0 +1,97 @@
+/* Globales */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: dekko;
+  src: url(../fonts/Dekko-Regular.ttf);
+}
+html {
+  font-size: 62.5%; /* 1rem=10px */
+  background-color: #ffc15d;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: #ffc15d;
+}
+
+header {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  border: calc(8px + 0.2vw) solid transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-size: cover;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 0.7rem;
+}
+section article div {
+  text-align: center;
+  border-radius: 1rem;
+  background-color: rgba(255, 128, 0, 0.1215686275);
+}
+
+.pCardInicio {
+  padding: 1rem;
+  background-color: #FF9B50;
+  border-radius: 3rem;
+  line-height: 2rem;
+  font-style: italic;
+  font-size: 2rem;
+  text-align: center;
+  color: bisque;
+}
+
+nav {
+  background-color: #FF9B50;
+  width: fit-content;
+  margin: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-style: inset;
+  border-color: #a92415;
+  border-width: 0.3rem;
+  border-radius: 0.7rem;
+}
+
+.nav-link {
+  font-family: dekko, sans-serif;
+  font-size: 2.5rem;
+  color: #a92415;
+  text-shadow: 1px 1px 2px black;
+}
+.nav-link:hover {
+  color: #c15c0e;
+  text-shadow: 1px 1px 2px black;
+  transform: translate(3px, -5px);
+}
+
+/*# sourceMappingURL=styles.css.map */

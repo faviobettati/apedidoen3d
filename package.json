@@ -1,0 +1,11 @@
+{
+  "name": "proyectofavio",
+  "version": "1.0.0",
+  "description": "Este es mi primer proyecto de Desarrollo Web en Coderhouse.\r El sitio es del emprendimiento de impresiones en 3D de una amiga.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
