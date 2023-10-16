@@ -1,0 +1,80 @@
+$colorClaro: rgb(236, 212, 182);
+$colorSuave:#FFBB5C;
+$colorMediano:#FF9B50;
+$colorVivo:#a92415;
+$colorTextos:#C63D2F;
+$colorTranslucid:#ff80001f;
+$fuentePrim:dekko, sans-serif;
+$fuenteSecu:Verdana, Geneva, Tahoma, sans-serif;
+
+/*Globales*/
+
+*{
+    margin: 0; 
+    padding: 0;
+}
+
+@font-face {
+    font-family: dekko;
+    src: url(../fonts/Dekko-Regular.ttf);
+}
+
+html{
+    font-size: 62.5%; /* 1rem=10px */
+    background-color: $colorSuave;
+    font-family:$fuenteSecu;
+}
+
+body{
+    background-color: $colorSuave;
+}
+
+header{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    article{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        margin: 1rem;
+        border: calc(8px + 0.2vw) solid transparent;
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        background-size: cover;
+        box-sizing: border-box;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+        border-radius: 0.7rem;
+        div{
+            text-align: center;
+            border-radius: 1rem;
+            background-color: $colorTranslucid;
+        }
+    }
+}
+.pCardInicio{
+    padding: 1rem;
+    background-color: $colorMediano;
+    border-radius: 3rem;
+    line-height: 2rem;
+    font-style: italic;
+    font-size: 2rem;
+    text-align:center;
+    color: $colorClaro;
+   }

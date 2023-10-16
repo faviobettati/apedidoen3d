@@ -1,0 +1,123 @@
+.alinear{
+    display:inline-block;
+    margin: 1rem;    
+}
+
+.alinearFabrica{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imgIndex{
+    height: 20vh;
+}
+
+.imgGaleria{
+    height: 25vh;
+}
+
+/* Listas */
+
+ol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $colorVivo;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* Tipografias */
+
+h1{
+    font-size: 5rem;
+    font-family: $fuentePrim;
+    text-align: center;
+    color: $colorTextos;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+h2{
+    font-size: 3rem;
+    color: $colorTextos;
+    font-family: $fuentePrim;
+    text-shadow: 1px 1px 1px $colorVivo;
+}
+
+h3{
+    font-size: 1.5rem;
+    color: $colorTextos;
+}
+
+p{
+    font-size: 1.4rem;
+    color: $colorTextos;
+}
+
+strong{
+    font-weight: 10;
+    font-style: italic;
+}
+
+.parrafoNaranja{
+    font-family:$fuenteSecu;
+    font-size: 2rem;
+    width:auto;
+    background-color: $colorTranslucid;
+}
+/* Formulario */
+
+.fondoForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:$colorSuave;
+    border-radius: 3rem;
+    font-family: $fuenteSecu;
+    font-size: 1.7rem;
+    color: $colorTextos;
+}
+
+.labelFormu{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    color: $colorVivo;
+    background-color:$colorSuave;
+    border-radius: 1rem;
+}
+
+#btnNaranja{
+    background-color:$colorSuave;
+    font-size: 2rem;
+    color: $colorTextos;
+}
+
+/* Pie de pagina, boton ARRIBA y logo IG.*/
+
+.linkArriba{
+    text-align: right;
+    margin-right: 3rem;
+    font-size: 1.5rem;
+    color:$colorVivo;
+}
+
+footer{
+    
+    text-align: center;
+    background-color:$colorMediano;
+    font-size: 1.5rem;
+}
+
+.igIcoColor{
+    color: $colorTextos;
+    font-size: 3rem;
+}

@@ -1,0 +1,129 @@
+/* Menu de Navegacion, Pagination, Animacion y Carousel*/ 
+
+nav{
+    background-color:$colorMediano;
+    width:fit-content; 
+    margin: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-style:inset;
+    border-color: $colorVivo;
+    border-width: 0.3rem;
+    border-radius: 0.7rem;
+ }
+.nav-link{
+    font-family: $fuentePrim;
+    font-size: 2.5rem;
+    color: $colorVivo;
+    text-shadow: 1px 1px 2px black;
+    &:hover{
+        color: $colorMediano;
+        text-shadow: 1px 1px 2px black;
+        transform: translate(3px, -5px);
+    }
+}
+
+.navbarFondo{
+    background-color:$colorMediano;
+}
+
+.menuNaveg{
+    background-color:$colorMediano;
+    font-size: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border-style:double;
+    border-radius: 1rem;
+}
+
+.nav-item{
+    padding: 0.5rem;
+}
+
+.bannerS{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+.logoBanner{
+    display: none;
+}
+
+.carouselCentrado{
+    display: flex;
+    justify-content: center;
+}
+.imgCarousel{
+    height: 15vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.navGaleria{
+    background-color:$colorMediano;
+    color: $colorClaro;
+    font-size: 2rem;
+    border-color: $colorVivo;
+    display: flex;
+    justify-content: center;
+    &:link{
+        background-color:$colorMediano;
+        color: $colorClaro;
+        font-size: 2rem;
+        border-color: $colorVivo;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+
+}
+
+@keyframes fadeLogo {
+    0% {
+        opacity:0;
+    }
+    25% {
+        opacity: 0.2;
+    }
+    50%{
+        opacity:0.5;
+    }
+    75%{
+        opacity: 0.7;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+.videoymapa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.mapouter{
+    position:relative;
+    text-align:right;
+    width:600px;
+    height:400px;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none;
+    width:600px;
+    height:400px;
+}
+.gmap_iframe {
+    width:600px;
+    height:400px;
+}
