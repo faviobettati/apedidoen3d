@@ -130,7 +130,7 @@ strong{
     background-color: rgba(255, 255, 255, 0.237);
 }
 
-/* Menu de Navegacion, Pagination y Carousel*/ 
+/* Menu de Navegacion, Pagination, Animacion y Carousel*/ 
 
 nav{
     background-color: #FF9B50;
@@ -154,6 +154,7 @@ nav{
 .nav-link:hover{
     color:#c15c0e;
     text-shadow: 1px 1px 2px black;
+    transform: translate(3px, -5px);
 }
 
 .navbarFondo{
@@ -217,6 +218,24 @@ nav{
     display: flex;
     justify-content: center;
 
+}
+
+@keyframes fadeLogo {
+    0% {
+        opacity:0;
+    }
+    25% {
+        opacity: 0.2;
+    }
+    50%{
+        opacity:0.5;
+    }
+    75%{
+        opacity: 0.7;
+    }
+    100% {
+        opacity:1;
+    }
 }
 /* Alineaciones e IFRAMEs*/
 
@@ -335,6 +354,7 @@ footer{
     .logoBanner{
         display:flex;
         height: 10rem;
+        animation: fadeLogo 4s;
     }
     section article{
         flex-direction: row;
@@ -358,8 +378,6 @@ footer{
 @media (min-width:1024px) {
     .alinearInicio{
         margin: 3rem;
-        margin-right: 15rem;
-        margin-left: 15rem;
         display: flex;
         flex-direction: row;
         text-align: center;
