@@ -362,7 +362,7 @@ nav {
 }
 @media (min-width: 1024px) {
   .alinearInicio {
-    margin: 3rem;
+    margin: 1rem;
     display: flex;
     flex-direction: row;
     text-align: center;
