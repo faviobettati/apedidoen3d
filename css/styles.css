@@ -356,6 +356,9 @@ nav {
   nav {
     width: fit-content;
   }
+  .fondoForm {
+    width: 350px;
+  }
 }
 @media (min-width: 1024px) {
   .alinearInicio {
@@ -375,7 +378,7 @@ nav {
     flex-direction: row;
     justify-content: center;
   }
-  .alinear {
+  .divInicio {
     width: 450px;
   }
 }
