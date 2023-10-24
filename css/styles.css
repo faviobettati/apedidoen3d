@@ -375,6 +375,9 @@ nav {
     flex-direction: row;
     justify-content: center;
   }
+  .alinear {
+    width: 450px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
