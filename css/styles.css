@@ -17,12 +17,11 @@
 }
 html {
   font-size: 62.5%; /* 1rem=10px */
-  background-color: #FFBB5C;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
-  background-color: #FFBB5C;
+  background-color: #46095e;
 }
 
 header {
@@ -330,7 +329,13 @@ nav {
     flex-direction: row;
   }
   .imgIndex {
-    height: 25vh;
+    height: 35vh;
+  }
+  .cardInicio {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 500px;
+    width: 500pc;
   }
   .imgGaleria {
     height: 30vh;

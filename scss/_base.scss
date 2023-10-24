@@ -10,7 +10,8 @@ rgb(236, 212, 182)
 #FFBB5C
 #FF9B50
 #a92415
-#C63D2F;
+#C63D2F
+#46095e;
 
 // Extend
 %flexcolumncenter{
@@ -43,12 +44,11 @@ rgb(236, 212, 182)
 
 html{
     font-size: 62.5%; /* 1rem=10px */
-    background-color: nth($color, 2);
     font-family:$fuenteSecu;
 }
 
 body{
-    background-color: nth($color, 2);;
+    background-color: nth($color, 6);;
 }
 
 header{

@@ -21,11 +21,20 @@
         height: 10rem;
         animation: fadeLogo 4s;
     }
+    
     section article{
         flex-direction: row;
     }
+    
     .imgIndex{
-        height: 25vh;
+        height: 35vh;
+    }
+    
+    .cardInicio{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 500px;
+        width: 500pc;
     }
     
     .imgGaleria{
