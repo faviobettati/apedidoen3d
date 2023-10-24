@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  background-color: #46095e;
+  background: linear-gradient(217deg, rgba(247, 0, 255, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(255, 166, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
 }
 
 header {
@@ -75,7 +75,7 @@ section article div {
 }
 
 .imgGaleria {
-  height: 25vh;
+  height: 20vh;
 }
 
 /* Listas */
@@ -181,7 +181,6 @@ footer {
 /* Menu de Navegacion, Pagination, Animacion y Carousel*/
 nav {
   background-color: #FF9B50;
-  width: fit-content;
   margin: auto;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -203,11 +202,18 @@ nav {
   transform: translate(3px, -5px);
 }
 
-.navbarFondo {
+.container-fluid {
   background-color: #FF9B50;
 }
 
+.navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+  display: flex;
+  justify-content: center;
+  margin: 2px;
+}
+
 .menuNaveg {
+  margin: auto;
   background-color: #FF9B50;
   font-size: 2rem;
   padding-right: 2rem;
@@ -346,6 +352,9 @@ nav {
   }
   .imgCarousel {
     height: 20vh;
+  }
+  nav {
+    width: fit-content;
   }
 }
 @media (min-width: 1024px) {
