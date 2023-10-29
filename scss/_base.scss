@@ -1,6 +1,7 @@
 // Variables
 
 $colorTranslucid:#ff80001f;
+$colorBackCard: rgba(193, 236, 225, 0.315);
 $fuentePrim:dekko, sans-serif;
 $fuenteSecu:Verdana, Geneva, Tahoma, sans-serif;
 
@@ -100,3 +101,12 @@ section{
     text-align:center;
     color: nth($color, 1);
    }
+ .pCardInicioError{
+    margin: 50px;
+    background-color: nth($color, 3);
+    border-radius: 3rem;
+    font-style: italic;
+    font-size: 2rem;
+    text-align:center;
+    color: nth($color, 1);
+}

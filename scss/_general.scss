@@ -14,6 +14,12 @@
 .imgGaleria{
     height: 20vh;
 }
+.cardInicio{
+    background-color: $colorBackCard;
+}
+.cardFabric{
+    background-color: $colorBackCard;
+}
 
 /* Listas */
 
@@ -26,6 +32,13 @@ ol{
 
 ul{
     list-style-type: none;
+}
+
+.listFabNos{
+    @extend %flexcolumncenter;
+    color: nth($color, 4);
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 /* Tipografias */
@@ -87,7 +100,7 @@ strong{
 /* Pie de pagina, boton ARRIBA y logo IG.*/
 
 .linkArriba{
-    @include textoCTF(nth($color, 4), 2rem, $fuentePrim );
+    @include textoCTF(nth($color, 5), 2rem, $fuentePrim );
     text-align: right;
     margin-right: 3rem;
 }

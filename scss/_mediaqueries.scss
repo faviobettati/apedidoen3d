@@ -9,47 +9,55 @@
 }
 
 @media (min-width:768px) {
-    
+    nav{
+        width: fit-content;
+     }
     .galeriaGrid{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
-   
     .logoBanner{
         display:flex;
         height: 10rem;
         animation: fadeLogo 4s;
     }
-    
     section article{
         flex-direction: row;
     }
-    
     .imgIndex{
         height: 35vh;
     }
-    
     .cardInicio{
         flex-direction: column;
         justify-content: space-evenly;
         height: 500px;
         width: 500pc;
     }
-    
-    .imgGaleria{
-        height: 30vh;
+    .cardFabric{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 560px;
+        height: 315px;
     }
     .videoFabrica{
         width: 560px;
         height: 315px;
+        border: calc(8px + 0.2vw) solid transparent;
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        background-size: cover;
+        box-sizing: border-box;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+        border-radius: 0.7rem;
+    }
+    .imgGaleria{
+        height: 30vh;
     }
     .imgCarousel{
         height: 20vh;
     }
-    nav{
-        width: fit-content;
-     }
     .fondoForm{
         width: 500px;
     }

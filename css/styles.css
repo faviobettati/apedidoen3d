@@ -1,4 +1,4 @@
-.videoymapa, .fondoForm, ol, .alinearFabrica, section article, section {
+.videoymapa, .fondoForm, .listFabNos, ol, .alinearFabrica, section article, section {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -65,6 +65,16 @@ section article div {
   color: rgb(236, 212, 182);
 }
 
+.pCardInicioError {
+  margin: 50px;
+  background-color: #FF9B50;
+  border-radius: 3rem;
+  font-style: italic;
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(236, 212, 182);
+}
+
 .alinear {
   display: inline-block;
   margin: 1rem;
@@ -78,6 +88,14 @@ section article div {
   height: 20vh;
 }
 
+.cardInicio {
+  background-color: rgba(193, 236, 225, 0.315);
+}
+
+.cardFabric {
+  background-color: rgba(193, 236, 225, 0.315);
+}
+
 /* Listas */
 ol {
   color: #a92415;
@@ -87,6 +105,12 @@ ol {
 
 ul {
   list-style-type: none;
+}
+
+.listFabNos {
+  color: #a92415;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 /* Tipografias */
@@ -160,7 +184,7 @@ strong {
 
 /* Pie de pagina, boton ARRIBA y logo IG.*/
 .linkArriba {
-  color: #a92415;
+  color: #C63D2F;
   font-size: 2rem;
   font-family: dekko, sans-serif;
   text-align: right;
@@ -321,6 +345,9 @@ nav {
   }
 }
 @media (min-width: 768px) {
+  nav {
+    width: fit-content;
+  }
   .galeriaGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -343,18 +370,29 @@ nav {
     height: 500px;
     width: 500pc;
   }
-  .imgGaleria {
-    height: 30vh;
+  .cardFabric {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 560px;
+    height: 315px;
   }
   .videoFabrica {
     width: 560px;
     height: 315px;
+    border: calc(8px + 0.2vw) solid transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-size: cover;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 0.7rem;
+  }
+  .imgGaleria {
+    height: 30vh;
   }
   .imgCarousel {
     height: 20vh;
-  }
-  nav {
-    width: fit-content;
   }
   .fondoForm {
     width: 500px;
