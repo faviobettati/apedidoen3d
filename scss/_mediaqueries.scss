@@ -35,6 +35,7 @@
         width: 500pc;
     }
     .cardFabric{
+        margin: 2rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -53,7 +54,8 @@
         border-radius: 0.7rem;
     }
     .imgGaleria{
-        height: 30vh;
+        margin: 0.5rem;
+        height: 25vh;
     }
     .imgCarousel{
         height: 20vh;

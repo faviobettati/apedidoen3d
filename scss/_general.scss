@@ -14,10 +14,7 @@
 .imgGaleria{
     height: 20vh;
 }
-.cardInicio{
-    background-color: $colorBackCard;
-}
-.cardFabric{
+.cardInicio, .cardFabric, .cardGaleria{
     background-color: $colorBackCard;
 }
 

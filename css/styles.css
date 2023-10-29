@@ -88,11 +88,7 @@ section article div {
   height: 20vh;
 }
 
-.cardInicio {
-  background-color: rgba(193, 236, 225, 0.315);
-}
-
-.cardFabric {
+.cardInicio, .cardFabric, .cardGaleria {
   background-color: rgba(193, 236, 225, 0.315);
 }
 
@@ -371,6 +367,7 @@ nav {
     width: 500pc;
   }
   .cardFabric {
+    margin: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -389,7 +386,8 @@ nav {
     border-radius: 0.7rem;
   }
   .imgGaleria {
-    height: 30vh;
+    margin: 0.5rem;
+    height: 25vh;
   }
   .imgCarousel {
     height: 20vh;
